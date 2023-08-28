@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- bootstrap JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <!-- bootstrap CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <!-- bootstrap icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
+  <!-- aos.js -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Chart.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.0.1/chart.umd.js"
+    integrity="sha512-gQhCDsnnnUfaRzD8k1L5llCCV6O9HN09zClIzzeJ8OJ9MpGmIlCxm+pdCkqTwqJ4JcjbojFr79rl2F1mzcoLMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Vue3 -->
+  <script src="./js/vue.global.js"></script>
+
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="icon" href="./images/icon.png" />
+  <title>Carbon waste - a marketing strategy for low-carbon food</title>
+</head>
+
+<body>
+
+  <script>
+    document.querySelector('body').classList.add("loading");
+  </script>
+  <div class="loading_modal">
+    <div class="loading-animation">
+      <div class="bo bo1"></div>
+      <div class="bo bo2"></div>
+      <div class="bo bo3"></div>
+      <div class="bo bo4"></div>
+    </div>
+  </div>
+  <div id="app">
+    <a href="#Top" class="TopBtn"><img src="./images/down-arrow.png" alt=""></a>
+    <div id="Top"></div>
+    <!-- Nav Start -->
+    <nav class="navbar navbar-expand-lg nav__class fixed-top">
+      <div class="container-fluid">
+        <!-- LOGO -->
+        <div class="navbar-brand" data-aos="fade-right">
+          <a href="index.html" ref="logo" class="logotext text-dark"><span style="color: rgb(96, 181, 57);">Carbon</span>Discard</a>
+        </div>
+
+        <!-- 第一部份:手機版 -->
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#linkbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- 第二部份:電腦版 -->
+
+        <div class="collapse navbar-collapse" id="linkbar">
+          <ul class="navbar-nav" style="margin-left:73px; font-size: 18px" data-aos="fade-left">
+            <li class="nav-item">
+              <a href="#services" class="nav-link">Low-carbon mindset</a>
+            </li>
+            <li class="nav-item">
+              <a href="#carbonComputer" class="nav-link">Carbon Footprint Calculator App</a>
+            </li>
+            <li class="nav-item">
+              <a href="#ShoppingCart" class="nav-link">Online ordering service</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Chart" class="nav-link d-flex justify-content-flex-end " style="margin-right: 5px;">Bestselling
+                recommended　<span> meal box　<br>Q & A</span></a>
+            </li>
+            <!-- <li class="nav-item">
+                <a href="#information" class="nav-link">餐盒Q&A</a>
+              </li> -->
+            <li class="nav-item">
+              <a href="#story" class="nav-link">Meal box Story</a>
+            </li>
+            <li class="nav-item">
+              <a href="#test" class="nav-link">Carbon reduction knowledge</a>
+            </li>
+            <li class="nav-item">
+              <a href="#footer" class="nav-link">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="modal" data-bs-target="#MoreNews_modal">More Information</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Nav End -->
+    <!-- Carousel Start -->
+
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel"
+      data-aos-duration="1000">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
+      </div>
+      <div class="carousel-inner ">
+        <div class="carousel-item active">
+          <img src="./images/carousel1.jpg" class="d-block"alt="carousel1.jpg" draggable="false" />
+          <div class="carousel-caption d-none d-md-block carousel-text1">
+            <h3 data-aos="fade-right" class="test1 mb-lg-4">
+              <!-- 2050<br />淨零碳排不僅是全球的目標 -->
+              The goal of net zero carbon emissions by 2050.
+            </h3>
+            <p data-aos="fade-left">
+              <!-- 淨零軌跡與行動路徑探討生活轉型 -->
+              Exploring the Transition to Sustainable Living through Net Zero Trajectories and Action Pathways
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./images/carousel2.jpg" class="d-block" alt="carousel2.jpg" draggable="false" />
+          <div class="carousel-caption d-none d-md-block carousel-text2">
+            <h3 data-aos="fade-right" class="mb-lg-4">
+              <!-- 減碳「酷」地球 -->
+              Reducing Carbon 「Cool」 Earth
+            </h3>
+            <p data-aos="fade-left">
+              <!-- 台灣成為全世界第11個推動碳標籤的國家 -->
+              Taiwan becomes the 11th country in the world to promote labeling initiatives
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./images/carousel3.jpg" class="d-block" alt="carousel3.jpg" draggable="false" />
+          <div class="carousel-caption d-none d-md-block carousel-text3">
+            <h3 data-aos="fade-right" class="mb-lg-4">
+              <!-- 每人平均碳排放量為10.77公噸 -->
+              The average per capita carbon emissions are 10.77 tons
+            </h3>
+            <p data-aos="fade-left">
+              In 2019, the total CO2 emissions from energy use in our country were 2.56 million metric tons, accounting
+              for 0.76% of the global emissions.
+              <!-- 我國2019年能源使用CO2排放總量為256.0百萬公噸<br />占全球排放總量的0.76
+              %<br />每人平均排放量為10.77公噸 -->
+            </p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+      <a href="#services" class="toServicesBtn">
+        <div></div>
+      </a>
+    </div>
+    <!-- Carousel End -->
+    <!-- services Start -->
+    <section id="services">
+      <h1 class="sech1"><i class="bi bi-newspaper"></i> Low-carbon mindset</h1>
+      <div class="slide">
+        <div class="slide-control">
+          <div class="slide-prev" @click="slide_id = slide_id == 0 ? 3 : slide_id - 1">
+            <span class="carousel-control-prev-icon"></span>
+          </div>
+          <div class="slide-next" @click="slide_id = slide_id == 3 ? 0 : slide_id + 1">
+            <span class="carousel-control-next-icon"></span>
+          </div>
+        </div>
+        <div class="slide-container">
+          <div class="slide-project"
+            :class="(index === slide_id && 'show') || ((index + 1) % 4 === slide_id && 'prev') || ((index + 2 ) % 4 === slide_id && 'back') || ((index + 3 ) % 4 === slide_id && 'next')"
+            v-for="i , index in slide">
+            <div class="slide-header" :style="'background:' + i.color">
+              <h1>{{i.english}}</h1>
+              <!-- <h3>{{i.title}}</h3> -->
+            </div>
+            <p class="slide-body" v-text="i.content"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- services End -->
+
+    <!-- 排碳計算機 Start -->
+    <section id="carbonComputer" data-aos="zoom-in">
+      <div class="Computer_container">
+        <div class="content">
+          <div class="sech1"><i class="bi bi-calculator"></i>
+            <!-- 排碳計算機 -->
+            <h1 class="fw-bolder">Carbon Footprint <br>
+              Calculator App</h1>
+          </div>
+          <hr />
+          <p>
+            This app can calculate the carbon emissions of food and help users contribute to the well-being of the
+            Earth. By entering the quantity in grams, it can determine the carbon footprint generated from the food
+            consumed on a given day.
+            <!-- 這款App不僅可以計算出食物的碳排放量，也可以愛護地球，只要填入多少克就可以知道今天排出多少碳排了 -->
+          </p>
+        </div>
+
+        <div class="computer">
+          <div class="select-computer">
+            <div class="select-tag" @click="computer_now = 'first'">
+              <img src="./images/bread.png" alt="" draggable="false" />
+              <span>
+                <!-- 全穀雜糧類 -->
+                Whole grains and cereals
+              </span>
+            </div>
+            <div class="select-tag" @click="computer_now = 'second'">
+              <img src="./images/meat.png" alt="" draggable="false" />
+              <span>
+                <!-- 大魚肉蛋類 -->
+                Fish,meat and eggs
+              </span>
+            </div>
+            <div class="select-tag" @click="computer_now = 'third'">
+              <img src="./images/vegetable.png" alt="" draggable="false" />
+              <span>
+                Vegetables
+                <!-- 蔬菜類 -->
+              </span>
+            </div>
+            <div class="select-tag" @click="computer_now = 'fourth'">
+              <img src="./images/healthy-food.png" alt="" draggable="false" />
+              <span>
+                Fruits
+                <!-- 水果類 -->
+              </span>
+            </div>
+            <div class="select-tag" @click="computer_now = 'fifth'">
+              <img src="./images/dairy.png" alt="" draggable="false" />
+              <span>
+                Dairy products
+                <!-- 乳品類 -->
+              </span>
+            </div>
+            <div class="select-tag" @click="computer_now = 'sixth'">
+              <img src="./images/nuts.png" alt="" draggable="false" />
+              <span>
+                Nuts
+                <!-- 堅果種子類 -->
+              </span>
+            </div>
+          </div>
+          <hr />
+          <h5>{{carbon_sum}}</h5>
+          <div class="computer_table">
+            <template v-for="computer in computers">
+              <template v-if="computer.class == computer_now">
+                <div class="computer_tr">
+                  <div>{{computer.name}}</div>
+                  <input type="number" v-model="computer.amount" placeholder="grams" style="padding-left: 5px;">
+                  <div>1g produces {{computer.carbon}}g</div>
+                </div>
+              </template>
+            </template>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 排碳計算機 End -->
+    <!-- 購物車 Start -->
+    <section id="ShoppingCart">
+      <h1 class="sech1">
+        <img src="./images/豬會飛LOGO2.png" draggable="false" />
+        <!-- 豬會飛 -->
+        Pigs can fly
+        <span style="color: #ff7b00">
+          online ordering
+          <!-- 線上訂購 -->
+        </span>
+      </h1>
+      <div class="select_container" data-aos="fade-right">
+        <input type="radio" v-for="el,i in select_container" :id="'r' + i" name="drone" :value="el"
+          v-model="select_value" />
+        <div v-for="el,i in select_container">
+          <label :for="'r'+ i" class="select_radio" :class="select_value === el && 'select_on'">{{el}}</label>
+        </div>
+      </div>
+      <div class="ShoppingCart_container">
+        <div class="center">
+          <template v-for="product in products">
+            <div v-if="product.product_class == select_value" class="ShoppingCart_box">
+              <img :src="product.img" alt="img" draggable="false" />
+              <p class="product-name text-center "
+                :class="product.product_class === 'Fat reduction series' && 'productClass1' || product.product_class === 'Muscle gain series' && 'productClass2'|| product.product_class === 'Luxury series' &&'productClass3'">
+                {{product.name}}
+              </p>
+              <div class="shoppingCart_hidden">
+                <p class="carbn m-0 text-center">{{'carbon emissions:'}} <br> {{product.carbon_content}}</p>
+                <p class="price">{{'$' + product.price}}</p>
+                <div class="buy">
+                  <button @click="fs_updateValue(product,product.amount - 1)" class="btn btn-outline-warning">
+                    -
+                  </button>
+                  <input type="number" class="amount" v-model="product.amount" maxlength="3" />
+                  <button @click="fs_updateValue(product,product.amount + 1)" class="btn btn-outline-warning">
+                    +
+                  </button>
+
+                </div>
+              </div>
+            </div>
+          </template>
+        </div>
+      </div>
+
+      <a @click="fs_shopingCartToggle" class="shopingCart_toggle" v-html="shopingCart_toggle_img"></a>
+      <form action="./php/buy.php" method="get">
+        <div class="sum_box" ref="sum_box">
+          <h3>shopping cart</h3>
+          <p class="product_content"></p>
+          <div v-if="Lsum == 0">You have not ordered any products yet</div>
+          <template v-for="product in products">
+            <template v-if="product.amount > 0">
+              <div class="d-flex  align-items-center w-100 mb-3">
+                <img :src="product.img" draggable="false" />
+                <div class="product-data d-flex flex-column px-2" style="flex: 1;">
+                  <span class="text-break">
+                    {{product.name}}
+                  </span>
+                  <span>
+                    {{product.amount+ 'box'}}
+                  </span>
+                </div>
+                <button @click="fs_updateValue(product,product.amount - product.amount)" class="btn btn-outline-danger" style="display: inline-block;">
+                  cancel
+                </button>
+                <input type="hidden" :name="product.name" :value="product.amount" />
+              </div>
+            </template>
+          </template>
+          <div v-if="Lsum != 0">
+            name*
+            <input type="text" name="name" class="form-control" placeholder="please type in your name" required />
+            address*
+            <input type="text" name="address" class="form-control" placeholder="please enter address" required />
+            remark
+            <input type="text" name="content" class="form-control" />
+          </div>
+          <p>{{'total: $'+Lsum+' dollar'}}</p>
+          <p style="margin: auto">
+            <!-- <input v-if="Lsum != 0" type="submit" value="送出" class="btn btn-warning" /> -->
+            <button v-if="Lsum != 0" class="btn btn-warning" @click="fs_submit()">
+              submit
+            </button>
+            <input type="hidden" name="Lsum" :value="Lsum" />
+          </p>
+        </div>
+      </form>
+    </section>
+    <!-- 購物車 End -->
+    <section id="CharInformation">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6 col-12">
+            <!-- 熱銷推薦 Start -->
+              <section id="Chart" data-aos="fade-right">
+                <h1 class="sech1"><i class="bi bi-bar-chart-line"></i>
+                  Hot-selling recommendation
+                  <!-- 熱銷推薦 -->
+                </h1>
+                <div><canvas id="myChart" width="230" height="230"></canvas></div>
+              </section>
+            <!-- 熱銷推薦 End -->
+          </div>
+          <div class="col-lg-6 col-12">
+            <!-- 餐盒Q&A Start -->
+                <section id="information" data-aos="fade-left">
+                  <h1 class="sech1"><i class="bi bi-bar-chart-line"></i>
+                    Meal Box Q & A
+                    <!-- 餐盒Q&A -->
+                  </h1>
+                  <div class="information-container">
+                    <div class="informat" v-for="el,i in information">
+                      <div>Q{{i+1}} : {{el.title}}　
+                        <!-- {{el.english}} -->
+                      </div>
+                      <div style="text-align: justify;">{{el.content}}</div>
+                      <br />
+                    </div>
+                  </div>
+                </section>
+              <!-- 餐盒Q&A End -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 餐盒小故事 Start -->
+    <section id="story">
+      <h1 class="sech1">
+        <i class="bi bi-book-half"></i>
+        Meal box Story
+        <!-- 餐盒小故事 -->
+      </h1>
+
+      <div class="container">
+        <!-- 1 -->
+        <div class="card">
+          <img src="./images/餐盒1.jpg" class="card-img-top" alt="..." draggable="false" />
+          <div class="card-body">
+            <h3 class="card-title">
+              Ingredients
+              <!-- 食材 -->
+            </h3>
+            <p class="card-text">
+              We use SGS-certified ingredients for our meals. We offer a wide variety of meal box options that are low
+              in oil and calories. Our meal boxes are made from eco-friendly materials, ensuring sustainability. We
+              prepare our meal boxes daily to ensure freshness of the ingredients.
+              <!-- 使用SGS認證之食材、餐盒種類多、餐盒少油低卡、使用環保材質製作餐盒、餐盒每天製作，食材新鮮。 -->
+            </p>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="card">
+          <img src="./images/餐盒2.jpg" class="card-img-top" alt="..." draggable="false" />
+          <div class="card-body">
+            <h3 class="card-title">
+              Utensils
+              <!-- 餐具 -->
+            </h3>
+            <p class="card-text">
+              We aim to reduce carbon emissions by using eco-friendly utensils. Having the restaurant personally deliver
+              the meals adds a personal touch and enhances the overall experience. Disposable utensils typically refer
+              to plastic knives, spoons, disposable bamboo chopsticks, paper plates, and cups, which are inexpensive and
+              can be discarded after use.
+              <!-- 減少碳排放量、可以請店家親自送會更有親和力、一次性餐具泛指塑膠刀叉湯匙、免洗竹筷、紙碟、紙杯等，使用後免洗可直接丟的廉價餐具。 -->
+            </p>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="card">
+          <img src="./images/餐盒3.jpg" class="card-img-top" alt="..." draggable="false" />
+          <div class="card-body">
+            <h3 class="card-title">
+              Environmental Sustainability
+              <!-- 環保 -->
+            </h3>
+            <p class="card-text">
+              While disposable utensils can help prevent the transmission of saliva-borne diseases and provide
+              convenience for eating on-the-go, they contribute to waste management and environmental issues. The
+              disposal of these utensils creates a burden on waste management systems, and their production also
+              contributes to carbon emissions.
+              <!-- 一次性餐具可避免唾液傳染的傳染病也可以當在外方便吃東西的餐具，使用後不僅造成垃圾與環保的處理問題，也產生了碳排放量。 -->
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 餐盒小故事 End -->
+
+    <!-- test Start-->
+    <section id="test">
+      <div class="test_container">
+        <div v-for="test,idx in tests" :class="'test_box'+ ` t${idx - test_change}`" v-show="test.show">
+          <span v-html="test.title"></span>
+          <div class="test_title">
+            <template v-if="idx != 0">
+              {{"Q" + idx}} <span v-html="test.question"></span>
+            </template>
+            <template v-else>
+              Are you ready for the test? <br />
+              You can find the answers at the top of the website!
+              <!-- 可以在網站上方找到答案喔！ -->
+            </template>
+          </div>
+          <hr />
+          <template v-for="option,idx2 in test.options">
+            <input type="radio" :name="test.title" :id="option" :value="sorts[idx2]" v-model="test.user" />
+            <label :for="option">
+              <div>
+                <span v-if="test.user == sorts[idx2]" class="test_flag">
+                  {{sorts[idx2]}}
+                </span>
+                <span v-else> {{sorts[idx2]}} </span>
+              </div>
+              <div>{{option}}。</div>
+            </label><br />
+          </template>
+          <template v-if="idx == 0">
+            <button @click="tests[idx].show = !tests[idx].show,test_change++" class="btn btn-lg btn-secondary">
+              Start answering
+              <!-- 開始作答 -->
+            </button>
+          </template>
+          <template v-else-if="idx+1 == tests.length">
+            <button @click="tests[idx].show = !tests[idx].show,test_change++" class="btn btn-lg btn-secondary">
+              End of answer
+              <!-- 作答完畢 -->
+            </button>
+          </template>
+          <template v-else-if="test.user">
+            <button @click="tests[idx].show = !tests[idx].show,test_change++" class="btn btn-lg btn-secondary">
+              Next question
+              <!-- 下一題 -->
+            </button>
+          </template>
+        </div>
+      </div>
+      <div class="test_result" v-show="test_change === 6">
+        <p>{{test_result}}fraction</p>
+        <button @click="fs_gameAgain()" class="btn btn-lg btn-outline-light">
+          Play again
+          <!-- 再玩一次 -->
+        </button>
+      </div>
+    </section>
+
+    <!-- test End -->
+
+    <!-- footer Start -->
+    <footer id="footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <div class="title">Store information</div>
+          <div>
+            We serve: dine-in, takeaway, contactless delivery service <br />
+            Address: No.61, Chong-Yuan E. Rd.,Hsinchuan District,New Taipei City, Zip code 242. <br>
+            Telephone:　02-2277-7833 <br>
+
+            <!-- 服務選項: 內用 · 外帶 · 無接觸送餐服務
+            地址： 242新北市新莊區中原東路61號<br />
+            電話： 02 2277 7833<br />
+            點餐: ubereats.com, foodpanda.com.tw<br /> -->
+          </div>
+          <form action="./php/information.php" method="get" @submit.prevent="fs_footerSubmit">
+            <div class="title">contact us</div>
+            <br />
+            <div>Name*</div>
+            <input type="text" v-model="userName" class="form-control" required name="username" />
+            <div>Email*</div>
+            <input type="email" v-model="userGmail" class="form-control" required name="usergmail" />
+            <div>Message*</div>
+            <textarea v-model="usercontent" id="usercontent" rows="5" class="form-control" required
+              name="usercontent"></textarea>
+            <div class="mt-3">
+              <!-- <input type="submit" @click="fs_footerSubmit" value="送出" class="btn btn-outline-light" /> -->
+              <input type="submit" value="send" class="btn btn-outline-light" />
+              <input type="reset" value="back" class="btn btn-outline-light" />
+            </div>
+          </form>
+        </div>
+        <div class="footer-right">
+          <div class="footer-right-top">
+            <h2 class="title">Low carbon bento design competition information</h2>
+            <a href="file/創意低碳便當設計.docx" download class="btn">Download the registration form</a>
+          </div>
+          <div class="footer-right-bottom">
+            <div class="title">Quick links</div>
+            <a href="#services" class="btn">Low-carbon mindset</a>
+            <a href="#carbonComputer" class="btn">Carbon Footprint Calculator App</a>
+            <a href="#ShoppingCart" class="btn">Online ordering service</a>
+            <a href="#story" class="btn">Meal box Story</a>
+            <a href="#Chart" class="btn">Bestselling recommended meal box Q & A</a>
+            <a href="#test" class="btn">Carbon reduction knowledge</a>
+            <a href="#footer" class="btn">Contact Us</a>
+            <a href="https://lucashsu95.github.io/url/減碳相機/減碳相機.html" class="btn" target="_blank">Carbon-reducing camera</a>
+            <a href="https://lucashsu95.github.io/url/減碳大作戰/減碳大作戰.html" class="btn" target="_blank">The battle to reduce carbon emissions</a>
+            <a class="btn" data-bs-toggle="modal" data-bs-target="#MoreNews_modal">More Information</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer End -->
+    <!-- copyright Start -->
+    <div class="copyright">
+      Carbon reduction marketing website using Vue.js Bootstrap 5 Chart .js AOS.js PHP　copyright &copy; 2022
+    </div>
+    <!-- copyright End -->
+    <!-- 更多資訊 Start -->
+    <div class="modal fade" id="MoreNews_modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2>More Information</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <!-- Start -->
+          <div class="modal-body">
+            <div id="MoreNews">
+              <div v-for="data in datas" class="MoreNews_container" :id="data.id"
+                @click="fs_click_modalMoveTop(data.id)">
+                <img :src="data.img" draggable="false" />
+              </div>
+              <div class="MoreNews_content" @click="fs_click_modalMoveTop('close')">
+                <h4 class="MoreNews_content_title">{{text_h}}</h4>
+                <div v-html="text_content"></div>
+              </div>
+            </div>
+          </div>
+          <!-- End -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-link" data-bs-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 更多資訊 End -->
+  </div>
+
+  <!-- script.js Start -->
+  <script src="./js/script.js"></script>
+  <!-- script.js End -->
+  <!-- AOS Start -->
+  <script>
+    AOS.init({
+      duration: 800,
+    });
+  </script>
+  <!-- AOS End -->
+
+  <script>
+    document.querySelector('body').classList.remove("loading");
+  </script>
+</body>
+
+</html>
